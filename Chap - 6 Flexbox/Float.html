@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: reverse;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: lightgreen;
+            height: 160vh;
+            align-items: center;
+            /* align-content: center; */
+        }
+        .box1{
+            background-color: blue;
+            height: 168px;
+            width: 248px;
+            order: 4;
+            align-self:flex-end ;
+            flex-grow: 1;
+
+            
+            
+
+        }
+        .box2{
+            background-color: red;
+            height: 168px;
+            width: 248px;
+            /* float: right;
+            clear: right; */
+            border: 2px solid black;
+            order: 3;
+            
+        }
+        .box2B{
+            background-color: red;
+            height: 168px;
+            width: 248px;
+            border: 2px solid black;
+
+        }
+        .box2C{
+            background-color: red;
+            height: 168px;
+            width: 248px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box1">This is my Box - 1</div>
+    <div class="box2">And This one is my Box - 2</div>
+    <div class="box2B">New box2B</div>
+    <div class="box2C">and box2C</div>
+    </div>
+    
+
+</body>
+</html>
