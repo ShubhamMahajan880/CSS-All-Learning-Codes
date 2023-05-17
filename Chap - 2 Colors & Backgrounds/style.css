@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.red{
+    background-color: red;
+    color: rgb(22, 43, 236);
+}
+
+.green{ 
+    background-color: green;
+    height: 44px;
+    color:#ff7180;
+    color: hsl(80%, 20%, 50%);
+} 
