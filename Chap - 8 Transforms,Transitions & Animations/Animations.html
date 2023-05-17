@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+        }  
+        .box{
+            width: 300px;
+            background-color: red;
+            color: white;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center;
+            animation-name: widthanimation;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 4;            
+            /* animation-direction: alternate-reverse; */
+            animation: widthanimation 2s 1s ease-in 4 alternate;          
+        }
+        .box2{
+            animation: widthanimation2 2s 1s ease-in 4 alternate;          
+        }
+        
+        /* img{
+            animation: widthanimation 1s 1s ease-in 4 alternate;          
+        } */
+        @keyframes widthanimation {
+            from{
+                width: 900px;
+                height: 450px;
+
+            }
+            to{
+                width: 100vw;
+                height: 50vh;
+            }
+        }
+        @keyframes widthanimation2 {
+            0% {
+                width: 900px;
+                height: 450px;
+            }
+            20% {
+                width: 100vw;
+                height: 50vh;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            
+            My self Shubham Mahajan and currenly i am bussy in Leanring of Cascading Style Sheet.            
+        </div>
+        <div class="box2">
+            <img src="23.png" alt="">
+        </div>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Progress Bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            height: 122px;
+        }
+        main{
+            background-color: blue;
+            height: 900px;
+        }
+        .progress{
+            height: 5px;
+            background-color: red;
+            animation: loading 2s ease-in-out  normal;
+        }
+        img{
+            align-content: center;
+            /* animation: Rotate 2s infinite normal; */
+        }
+        .slider{
+            background-color: aquamarine;   
+            height: 520px;
+            width: 500vh;
+            overflow: hidden;
+            margin: auto;
+            padding: auto;
+            display: block;
+            margin: auto;
+            
+        }
+        .img1{
+            display: block;
+            height: 300px;
+            margin: auto;
+            transform: translateX(0vw);
+        }
+        .img2{
+            display: block;
+            height: 300px;
+            margin: auto;
+            transform: translateX(0vw);
+        }
+        .img3{
+            display: block;
+            height: 300px;
+            margin: auto;
+            transform: translateX(0vw);
+        }
+        .slider{
+            display: flex;
+            justify-content: center;
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0;
+            }
+            50% {
+                width: 60vw;
+            }
+            100% {
+                width: 100vw;
+            }
+        }
+        @keyframes Rotate {
+            0% {
+                rotate: 0deg;
+            }
+            50% {
+                rotate: 180deg;
+            }
+            100% {
+                rotate: 360deg;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="progress">
+        We proceed to next
+    </div>
+    <header>
+
+    </header>
+    <main>
+        <!-- <img src="86.jpg" alt="" height="125px">      -->
+        <div class="slider">
+            <img class="img1" src="2.jpg" alt="">
+            <img class="img2" src="4.jpg" alt="">
+            <img class="img3" src="7.jpg" alt="">
+        </div>
+    </main>
+</body>
+</html>
